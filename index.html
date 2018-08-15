@@ -1,95 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nicolás Arias | Portfalio</title>
-    <link rel="stylesheet" href="css/bulma.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nicolás Arias | Portfalio</title>
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar is-link is-fixed-top">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                    </a>                  
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div class="navbar-menu">
-                    <ul class="navbar-end">
-                        <a class="navbar-item"href="#">Inicio</a>
-                        <a class="navbar-item"href="#">Descripción</a>
-                        <a class="navbar-item"href="#">Skills</a>
-                        <a class="navbar-item"href="#">Mi Trabajo</a>
-                        <a class="navbar-item"href="#">Contácto</a>
-                        
-                    </ul>
-                </div>
-        </nav>
-        <section class="my-hero has-text-white">
-            <h1>Nicolás Mateo Arias Pulido</h1>
-            <h3>Fullstack js and Android developer</h3>
-            <img src="assets/profile.jpg" class="profile-image" alt="">
-        </section>
-    </header>
-    <section class="section is-medium has-text-centered is-long description">
-        <div class="container">
+  <header id="home">
+    <nav class="navbar is-link is-fixed-top">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="assets/logo.svg" alt="Nicolás Arias Logo" width="100">
+        </a>                  
+      </div>
+      <div class="navbar-menu">
+        <ul class="navbar-end">
+          <a id="goHome" class="navbar-item">Inicio</a>
+          <a id="goDescription" class="navbar-item">Descripción</a>
+          <a id="goSkills" class="navbar-item">Skills</a>
+          <a id="goWork" class="navbar-item">Mi Trabajo</a>
+          <a id="goContact" class="navbar-item">Contácto</a>
+        </ul>
+      </div>
+    </nav>
+    <section class="my-hero has-text-white">
+      <h1>Nicolás Mateo Arias Pulido</h1>
+      <h3>Fullstack js and Android developer</h3>
+      <img src="assets/profile.jpg" class="profile-image" alt="">
+    </section>
+  </header>
+  <section id="description" class="section is-medium has-text-centered is-long description">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-fifths">
+          <h1 class="has-text-white title is-spaced is-size-3-desktop is-size-4-mobile">Hola, soy Nicolás Arias.</h1>
+          <h2 class="has-text-white subtitle is-size-5-desktop">Soy un Desarrollador <b>javascript</b> y Android. <b>Autodidacta</b>, con experiencia en trabajo en equipo usando el CVS Git. Entusiasta de adquirir nuevos conocimientos. Me gusta hacer proyectos personales y ayudar a cumplir las metas de los demás.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section skills has-text-centered">
+    <div class="container is-narrow">
+      <div class="box">
+        <div class="content">
             <div class="columns is-centered">
-            <div class="column is-three-fifths">
-                <h1 class="has-text-white title is-spaced is-size-3-desktop is-size-4-mobile">Hola, soy Nicolás Arias.</h1>
-                <h2 class="has-text-white subtitle is-size-5-desktop">Soy un Desarrollador <b>javascript</b> y Android. <b>Autodidacta</b>, con experiencia en trabajo en equipo usando el CSM Git. Entusiasta de adquirir nuevos conocimientos. Me gusta hacer proyectos personales y ayudar a cumplir las metas de los demás.</h2>
+              <div class="column">
+                  <h1 class="title is-size-2 is-spaced">Skills</h1>
+              </div>
             </div>
-            </div>
+            <div class="columns is-centered">
+              <div class="column bordered">
+                <figure class="image"><i class="fas fa-desktop fa-3x is-skill-icon"></i></figure>
+                <h1 class="title is-size-4 is-spaced">Frontend</h1>
+                <ul class="centered">
+                  <li>HTML5, CSS3, Javascript</li>
+                  <li>Vue</li>
+                  <li>ReactJs</li>
+                  <li>Sass</li>
+                  <li>Materialize</li>
+                  <li>Bulma</li>
+                  <li>Bootstrap</li>
+                  <li>UI - UX</li>
+                </ul>
+              </div>
+              <div class="column bordered">
+                <figure class="image"><i class="fas fa-code fa-3x is-skill-icon"></i></figure>
+                  <h1 class="title is-size-4 is-spaced">Backend</h1>
+                  <ul class="centered">
+                    <li>NodeJs + Express</li>
+                    <li>GraphQl</li>
+                    <li>Mongodb + Mongoose</li>
+                    <li>(Mysql o PostgreSQL) + Sequalize</li>
+                    <li>PHP + Laravel</li>
+                </ul>
+              </div>
+              <div class="column">
+                <figure class="image"><i class="fas fa-mobile-alt fa-3x is-skill-icon"></i></figure>
+                <h1 class="title is-size-4 is-spaced">Mobile Development</h1>
+                <ul class="centered">
+                  <li>React Native</li>
+                  <li>NativeScript</li>
+                  <li>Java</li>
+                </ul>
+              </div>
         </div>
-    </section>
-    <section class="section skills has-text-centered">
-        <div class="container is-narrow">
-            <div class="box">
-            <div class="content">
-                <div class="columns is-centered">
-                <div class="column">
-                    <figure class="image"><img class="is-skill-icon" src="img/icon-designer.svg"></figure>
-                    <h1 class="title is-size-4 is-spaced">Frontend</h1>
-                    <ul>
-                        <li>HTML5, CSS3, Javascript</li>
-                        <li>Vue</li>
-                        <li>ReactJs</li>
-                        <li>Materialize</li>
-                        <li>Bulma</li>
-                        <li>Bootstrap</li>
-                        <li>UI - UX</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <figure class="image"><img class="is-skill-icon" src="img/icon-designer.svg"></figure>
-                    <h1 class="title is-size-4 is-spaced">Backend</h1>
-                    <ul>
-                        <li>NodeJs + Express</li>
-                        <li>GraphQl</li>
-                        <li>Mongodb + Mongoose</li>
-                        <li>(Mysql o Postgres) + Sequalize</li>
-                        <li>PHP + Laravel</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <figure class="image"><img class="is-skill-icon" src="img/icon-designer.svg"></figure>
-                    <h1 class="title is-size-4 is-spaced">Mobile Development</h1>
-                    <ul>
-                        <li>React Native</li>
-                        <li>NativeScript</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="container">
+              <figure class="image"><i class="fas fa-cogs fa-3x is-skill-icon"></i></figure>
+              <h1 class="title is-size-4 is-spaced">Dev tools</h1>
+              <p class="is-size-5">VSCode, npm, Git, Github, Bitbucket, gulp, Webpack, Android Studio, Adobe Illustrator, Ubuntu</p>
             </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="section projects is-white has-text-centered">
+    <div class="container is-narrow">
+      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Mis Recientes Trabajos</h1>
+      <h2 class="subtitle is-size-5-desktop">Estos son algunos de mis más recientes proyectos</h2>
+      <div class="project-grid">  
+        <div class="columns is-multiline is-mobile">
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+                <img class="project-thumb" src="assets/work/starBattle-01.jpg">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Juego web creado exclusivamente con vanilla js, desarrollado como entrenamiento para pruebas WorldSkills.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/Star_Battle" target="_blank">
+                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+                <img class="project-thumb" src="assets/work/siapp.webp">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Aplicación móvil desarrollada en react native para proyecto de investigación Fundación RedCOLSI 2018.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/qbitsing/si-app/" target="_blank">
+                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+                <img class="project-thumb" src="assets/work/android-01.jpg">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Aplicación android desarrollada de manera nativa con Java, como entrenamiento para competencia Senasoft 2018.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/androidCompleteGeo" target="_blank">
+                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+              <img class="project-thumb" src="assets/work/hanoi-01.jpg">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Juego de las torres de hanoi web creado con html5, css3 y javascript vanilla. Los resultados se guardan el la real time database de firebase.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/HanoiTowers" target="_blank">
+                  <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+                <img class="project-thumb" src="assets/work/graph.png">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Backend para la aplicacion del proyecto de investigación RedCOLSI 2018, escrito en NodeJs con sinsfraestructura GraphQL.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/mpgigat/si-api" target="_blank">
+                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+            <figure class="image is-3by2">
+                <img class="project-thumb" src="assets/work/youMovie-01.jpg">
+              <figcaption>
+                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Sitio web de peliculas, en la seccion "otras" uso el frameowrk Vue JS para crear el componente card reutilizable al hacer la petición a la api TheMovieDB.</h1>
+                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/YouMovie" target="_blank">
+                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column">
+            <a class="button is-primary is-outlined is-rounded is-medium" href="https://github.com/Narias1999">
+                <span class="icon"><i class="fab fa-github"></i></span><span>Ver más en Github</span>
+            </a>
+        </div>
+      </div>
+  </div>
+  </section>
+  <footer id="contact" class="section is-primary is-small has-text-centered">
+      <div class="container is-narrow">
+        <figure class="logo">
+          <img src="assets/logo.svg" width="130" alt="Nicolás Arias logo">
+          <figcaption>
+            <span class="is-size-4 has-text-white">Nicolás Arias</span>
+          </figcaption>
+        </figure>
+        <div class="columns is-centered"> 
+          <div class="column is-two-thirds">
+            <h2 class="contact is-size-6  has-text-white">
+              Escribeme a <a href="mailto:nicolasarias870@gmail.com">nicolasarias870@gmail.com</a>
+              <br> O llamame a <a href="tel:+573222497943">(+57) 322 249 7943</a>
+          </h2>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="https://twitter.com/nmarias_dev" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.linkedin.com/in/nicol%C3%A1s-mateo-arias-pulido-184882160/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="https://www.instagram.com/nmarias_dev/?hl=es" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="https://medium.com/@nicolsmateoariaspulido" target="_blank"><i class="fab fa-medium fa-lg"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
