@@ -32,6 +32,9 @@ li {
     justify-content: center;
     flex-direction: column;
 }
+.slogan {
+    font-size: 19px;
+}
 .my-hero img {
     width: 140px;
     margin-top: 20px;
