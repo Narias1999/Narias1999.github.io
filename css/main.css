@@ -36,7 +36,9 @@ li {
     font-size: 19px;
 }
 .my-hero img {
-    width: 140px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
     margin-top: 20px;
     border-radius: 50%;
 }
