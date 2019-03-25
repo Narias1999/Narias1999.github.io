@@ -1,0 +1,16 @@
+.HeadingContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.HeadingContainer figure {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.HeadingContainer figure img {
+  width: 300px;
+  max-width: 90%;
+  border-radius: 5px;
+  align-self: center;
+}

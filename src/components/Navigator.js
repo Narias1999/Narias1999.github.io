@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navigator.module.css";
-import Foto from "./../assets/profile.jpg";
+import Foto from "./../assets/logo.svg";
 
 function Navigator() {
   return (
@@ -15,7 +15,7 @@ function Navigator() {
       </div>
       <ul>
         <li>
-          <NavLink to="/about" activeClassName={styles.active}>
+          <NavLink to="/" exact activeClassName={styles.active}>
             About
           </NavLink>
         </li>
