@@ -1,3 +1,13 @@
+:root {
+  --primary: #20639b;
+  --secondary: #ed553b;
+  --dark: #173f5f;
+  --light: #3caea3;
+  --warn: #f6d55c;
+  --white: #ffffff;
+  --gray: #cccccc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +16,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

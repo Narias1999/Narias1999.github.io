@@ -1,0 +1,53 @@
+.Navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: var(--white);
+}
+
+.Navigator ul {
+  display: flex;
+}
+
+.Navigator li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.Navigator a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.Right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Right img {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Right div h4,
+.Right div p {
+  margin: 0;
+}
+
+.Right div h4 {
+  font-weight: 400;
+}
+.Right div p {
+  font-weight: 600;
+  color: var(--gray);
+}

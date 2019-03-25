@@ -1,0 +1,6 @@
+.Heading {
+  padding: 100px 20px;
+  box-sizing: border-box;
+  background: var(--secondary);
+  height: 100vh;
+}
