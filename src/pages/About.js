@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Heading from "./../components/Heading";
 import styles from "./About.module.css";
 import Foto from "./../assets/profile.jpg";
+import Button from "./../components/Button";
 
 const ListIcon = ({ name }) => (
   <div className={styles.ListIcon}>
@@ -34,6 +35,7 @@ class Home extends Component {
           </div>
           <figure>
             <img src={Foto} />
+            <Button text="Say Hello" block />
           </figure>
         </div>
       </Heading>
