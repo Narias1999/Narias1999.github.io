@@ -1,0 +1,18 @@
+footer {
+  background: var(--primary);
+  color: var(--white);
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.Brand img {
+  width: 80px;
+}
+.Brand h4 {
+  margin: 2px 0;
+  font-size: 24px;
+}
+.Brand strong {
+  color: var(--gray);
+  font-size: 15.6px;
+}

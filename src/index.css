@@ -1,12 +1,13 @@
 :root {
   --primary: #204e5f;
-  --secondary: #ff8984;
+  --secondary: #3498db;
   --light: #273b82;
   --brand: #00d1b2;
   --brand-light: #08bdeb;
   --warn: #f6d55c;
   --white: #edf7f5;
-  --gray: #b7d7d8;
+  --gray: #bdc3c7;
+  --dark: #2c3e50;
   --fontFamily: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }

@@ -2,7 +2,7 @@
   padding: 140px 50px 80px;
   box-sizing: border-box;
   background: url("../assets/hero.jpg");
-  min-height: 80vh;
+  min-height: 85vh;
   background-position: center;
   background-size: cover;
   color: var(--white);
