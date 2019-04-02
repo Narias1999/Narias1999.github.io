@@ -1,7 +1,9 @@
 .Heading {
   padding: 120px 50px;
   box-sizing: border-box;
-  background: var(--light);
+  background: url("../assets/hero.jpg");
   min-height: 80vh;
+  background-position: center;
+  background-size: cover;
   color: var(--white);
 }
