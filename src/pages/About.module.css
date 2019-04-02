@@ -33,9 +33,19 @@
   margin-left: 30px;
   font-size: 18px;
 }
-
 .ListIcon {
   display: flex;
-  width: 30px;
+  width: 55px;
   justify-content: center;
+}
+.Extract {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 80px;
+}
+.Extract p {
+  margin-top: 15px;
+  max-width: 700px;
+  text-align: justify;
 }
