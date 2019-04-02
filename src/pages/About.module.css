@@ -49,3 +49,11 @@
   max-width: 700px;
   text-align: justify;
 }
+.Extract button {
+  margin-top: 20px;
+}
+
+.Skills {
+  background: var(--gray);
+  padding: 40px;
+}

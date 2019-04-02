@@ -53,7 +53,9 @@ class Home extends Component {
             code becomes like one of my favorite hobbies, along with cycling and
             music.
           </p>
+          <Button text="Ask a question" />
         </section>
+        <section className={styles.Skills}>f</section>
       </Fragment>
     );
   }
