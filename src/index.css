@@ -11,6 +11,16 @@
   --fontFamily: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
+ul {
+  display: flex;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+  padding: 0 10px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

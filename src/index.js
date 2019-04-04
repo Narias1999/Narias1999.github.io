@@ -7,10 +7,11 @@ import {
   faMobile,
   faMeteor
 } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-library.add(faDesktop, faMobile, faMeteor);
+library.add(fab, faDesktop, faMobile, faMeteor);
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

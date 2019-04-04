@@ -1,0 +1,17 @@
+.SocialMedia {
+  display: flex;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+.SocialMedia .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+.SocialMedia .item .icon {
+  color: var(--white);
+}
