@@ -17,7 +17,7 @@ class Home extends Component {
       <Fragment>
         <Heading>
           <div className={styles.HeadingContainer}>
-            <div className="text">
+            <div className={styles.text}>
               <h1>Hi! I am Nicolás Arias</h1>
               <ul>
                 <li>

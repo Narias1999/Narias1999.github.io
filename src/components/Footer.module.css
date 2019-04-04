@@ -53,3 +53,14 @@ footer > div > h4 {
 .Menu ul li a:hover {
   border-color: var(--brand);
 }
+.mail a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  font-weight: 15px;
+}
+
+.mail a:hover {
+  color: var(--brand-light);
+}

@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SocialItem = ({ url, icon, color }) => (
   <div className={styles.item} style={{ backgroundColor: color }}>
-    <a href={url}>
-      <FontAwesomeIcon className={styles.icon} icon={["fab", icon]} size="md" />
+    <a href={url} target="__blank">
+      <FontAwesomeIcon className={styles.icon} icon={["fab", icon]} />
     </a>
   </div>
 );
@@ -32,7 +32,7 @@ function SocialMedia({}) {
   return (
     <div className={styles.SocialMedia}>
       {items.map(item => (
-        <SocialItem {...item} />
+        <SocialItem {...item} key={item.icon} />
       ))}
     </div>
   );

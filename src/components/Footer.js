@@ -32,6 +32,12 @@ function Footer({}) {
       <div className={styles.Contact}>
         <h4>Find me at</h4>
         <SocialMedia />
+        <h4 style={{ marginTop: 10 }}>Or write me an email</h4>
+        <p className={styles.mail}>
+          <a href="mailto:nicolasarias870@gmail.com">
+            nicolasarias870@gmail.com
+          </a>
+        </p>
       </div>
     </footer>
   );

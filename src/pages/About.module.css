@@ -38,6 +38,9 @@
   width: 55px;
   justify-content: center;
 }
+.text ul {
+  flex-direction: column;
+}
 .Extract {
   display: flex;
   align-items: center;
