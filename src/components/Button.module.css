@@ -14,6 +14,18 @@
 .Button.block {
   width: 100%;
 }
+.Button.bordered {
+  background: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
 .Button:hover {
   background: var(--brand-light);
+  color: var(--white);
+  border-color: var(--brand-light);
 }
+/* .Button.Button.bordered:hover {
+  background: transparent;
+  color: var(--brand-light);
+  border-color: var(--brand-light);
+} */

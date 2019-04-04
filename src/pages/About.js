@@ -49,11 +49,11 @@ class Home extends Component {
           </p>
           <p>
             I started learning to develop and design software applications when
-            I was just 15 years old, till then I won't stopped learning and do
-            code becomes like one of my favorite hobbies, along with cycling and
+            I was just 15 years old, till then I won't stop learning and do code
+            becomes like one of my favorite hobbies, along with cycling and
             music.
           </p>
-          <Button text="Ask a question" />
+          <Button text="Ask a question" bordered />
         </section>
         <section className={styles.Skills}>f</section>
       </Fragment>

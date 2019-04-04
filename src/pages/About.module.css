@@ -49,6 +49,9 @@
   max-width: 700px;
   text-align: justify;
 }
+.Extract h2 {
+  margin-top: 0;
+}
 .Extract button {
   margin-top: 20px;
 }
