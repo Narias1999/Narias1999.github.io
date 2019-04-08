@@ -4,6 +4,7 @@ import Heading from "./../components/Heading";
 import styles from "./About.module.css";
 import Foto from "./../assets/profile.jpg";
 import Button from "./../components/Button";
+import SkillCard from "./../components/SkillCard";
 
 const ListIcon = ({ name }) => (
   <div className={styles.ListIcon}>
@@ -11,7 +12,63 @@ const ListIcon = ({ name }) => (
   </div>
 );
 
+const MainListItem = ({ name, icon }) => (
+  <li>
+    <ListIcon name={icon} />
+    <span>{name}</span>
+  </li>
+);
+
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mainList: [
+        { icon: "desktop", name: "Web developer" },
+        { icon: "mobile", name: "Mobile developer" },
+        { icon: "meteor", name: "Lifelong learner" }
+      ],
+      skills: [
+        {
+          name: "Frontend",
+          image:
+            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          skillsList: [
+            "Javascript (ES6+)",
+            "React + Redux",
+            "VueJS",
+            "HTML5 + CSS3",
+            "Sass"
+          ]
+        },
+        {
+          name: "Backend",
+          image:
+            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          skillsList: [
+            "Javascript (ES6+)",
+            "React + Redux",
+            "VueJS",
+            "HTML5 + CSS3",
+            "Sass"
+          ]
+        },
+        {
+          name: "Frontend",
+          image:
+            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          skillsList: [
+            "Javascript (ES6+)",
+            "React + Redux",
+            "VueJS",
+            "HTML5 + CSS3",
+            "Sass"
+          ]
+        }
+      ]
+    };
+  }
+
   render() {
     return (
       <Fragment>
@@ -20,18 +77,9 @@ class Home extends Component {
             <div className={styles.text}>
               <h1>Hi! I am Nicolás Arias</h1>
               <ul>
-                <li>
-                  <ListIcon name="desktop" />
-                  <span>Web developer</span>
-                </li>
-                <li>
-                  <ListIcon name="mobile" />
-                  <span>Mobile developer</span>
-                </li>
-                <li>
-                  <ListIcon name="meteor" />
-                  <span>Lifelong learner</span>
-                </li>
+                {this.state.mainList.map(item => (
+                  <MainListItem {...item} />
+                ))}
               </ul>
             </div>
             <figure>
@@ -55,7 +103,14 @@ class Home extends Component {
           </p>
           <Button text="Ask a question" bordered />
         </section>
-        <section className={styles.Skills}>f</section>
+        <section className={styles.Skills}>
+          <h2>Skills</h2>
+          <div>
+            {this.state.skills.map(skill => (
+              <SkillCard {...skill} />
+            ))}
+          </div>
+        </section>
       </Fragment>
     );
   }

@@ -10,6 +10,7 @@
   background: var(--brand);
   color: var(--white);
   transition: 0.2s;
+  box-shadow: 2px 3px 4px #000000ab;
 }
 .Button.block {
   width: 100%;
@@ -20,6 +21,7 @@
   border: 2px solid var(--brand);
 }
 .Button:hover {
+  box-shadow: 1px 3px 7px #000000ab;
   background: var(--brand-light);
   color: var(--white);
   border-color: var(--brand-light);
