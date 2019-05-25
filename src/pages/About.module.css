@@ -45,7 +45,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 80px;
+  padding: 150px 80px;
 }
 .Extract p {
   margin-top: 15px;
@@ -60,12 +60,22 @@
 }
 
 .Skills {
-  background: var(--secondary);
-  padding: 40px;
+  background: var(--light-gray);
+  padding: 160px 80px;
 }
+
+  .Skills > h2 {
+    padding-bottom: 70px;
+    /* text-align: center; */
+    margin: 0;
+  }
 
 .Skills > div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 25px;
+}
+
+.Skills > div h3{
+  cursor: default;
 }

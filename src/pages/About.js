@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Heading from "./../components/Heading";
 import styles from "./About.module.css";
 import Foto from "./../assets/profile.jpg";
+import frontendImage from "./../assets/frontend.jpg";
+import mobileImage from "./../assets/mobile.jpg";
+import backendImage from "./../assets/backend.jpg";
 import Button from "./../components/Button";
 import SkillCard from "./../components/SkillCard";
 
@@ -31,38 +34,37 @@ class Home extends Component {
       skills: [
         {
           name: "Frontend",
-          image:
-            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          image: frontendImage,
           skillsList: [
             "Javascript (ES6+)",
+            "HTML5 + CSS3",
             "React + Redux",
             "VueJS",
-            "HTML5 + CSS3",
+            "Responsive Design",
             "Sass"
           ]
         },
         {
           name: "Backend",
-          image:
-            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          image: backendImage,
           skillsList: [
-            "Javascript (ES6+)",
-            "React + Redux",
-            "VueJS",
-            "HTML5 + CSS3",
-            "Sass"
+            "NodeJs",
+            "Scala",
+            "GraphQl",
+            "AWS",
+            "Microservices",
+            "Unit Testing",
           ]
         },
         {
-          name: "Frontend",
-          image:
-            "https://www.intimediastudio.com/wp-content/uploads/2018/06/Responsive4.png",
+          name: "Mobile",
+          image: mobileImage,
           skillsList: [
-            "Javascript (ES6+)",
-            "React + Redux",
-            "VueJS",
-            "HTML5 + CSS3",
-            "Sass"
+            "React Native",
+            "React Navigation",
+            "Redux",
+            "Flutter",
+            "Dart"
           ]
         }
       ]
@@ -97,14 +99,14 @@ class Home extends Component {
           </p>
           <p>
             I started learning to develop and design software applications when
-            I was just 15 years old, till then I won't stop learning and do code
-            becomes like one of my favorite hobbies, along with cycling and
+            I was just 15 years old, till then I had not stopped learning. Do code
+            has become one of my favorite hobbies, along with cycling, chess and
             music.
           </p>
-          <Button text="Ask a question" bordered />
+          <Button text="View Resume" bordered />
         </section>
         <section className={styles.Skills}>
-          <h2>Skills</h2>
+          <h2>What I know...</h2>
           <div>
             {this.state.skills.map(skill => (
               <SkillCard {...skill} />

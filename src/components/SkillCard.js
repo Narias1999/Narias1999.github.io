@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SkillCard.module.css";
 
-function SkillCard({ image, name }) {
+function SkillCard({ image, name, skillsList }) {
   return (
     <div className={styles.skill}>
       <div className={styles.title}>
@@ -10,7 +10,7 @@ function SkillCard({ image, name }) {
       </div>
       <div className={styles.listContainer}>
         <ul>
-          <li>Skill</li>
+          {skillsList.map(skill => <li>{skill}</li>)}
         </ul>
       </div>
     </div>
