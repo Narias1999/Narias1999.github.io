@@ -19,13 +19,13 @@ function Footer({}) {
             <Link to="/">About</Link>
           </li>
           <li>
-            <Link to="/">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="/">Resume</Link>
+            <Link to="/resume">Resume</Link>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>

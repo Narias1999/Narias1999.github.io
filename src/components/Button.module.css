@@ -26,3 +26,11 @@
   color: var(--white);
   border-color: var(--brand-light);
 }
+.Button.icon {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+}
+.Button.icon img {
+  width: 30px;
+}

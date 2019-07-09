@@ -86,12 +86,12 @@ class Home extends Component {
             </div>
             <figure>
               <img src={Foto} />
-              <Button text="Say Hello" block />
+              <Button block>Say Hello</Button>
             </figure>
           </div>
         </Heading>
         <section className={styles.Extract}>
-          <h2>About me</h2>
+          <h2>Who I am</h2>
           <p>
             I'm a Colombian based developer, with more than two years of work
             experience, where I've been part of big and small agile teams.
@@ -103,7 +103,7 @@ class Home extends Component {
             has become one of my favorite hobbies, along with cycling, chess and
             music.
           </p>
-          <Button text="View Resume" bordered />
+          <Button bordered>Check Resume</Button>
         </section>
         <section className={styles.Skills}>
           <h2>What I know...</h2>
