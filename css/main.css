@@ -17,8 +17,10 @@ header {
 }
 .navbar {
     box-shadow:0px 2px 2px rgba(10, 10, 10, 0.54);
-    background: var(--primary-bg);
     padding: 10px 0;
+}
+.navbar.is-link {
+   background: var(--primary-bg);
 }
 li {
     list-style: none;
