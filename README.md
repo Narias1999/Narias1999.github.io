@@ -3,4 +3,4 @@ Hi! this is the repo of my personal website. Here I put on some of my expirence 
 
 I've made this project with pure css and html seeking for a better performance.  
 
-Feel free to use it to build you own page :)  
+Feel free to use this repository for building you own page :)  

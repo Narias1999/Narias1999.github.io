@@ -2,12 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0s">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nicolás Arias | Portfalio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/bulma.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.1/css/bulma.min.css">
+  <style>
+  /* ABOVE THE FOLD STYLES */
+    body {
+      
+    }
+    header {
+      background-image: url("../assets/hero.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      box-shadow: 0px 4px 10px rgba(10, 10, 10, 0.54);
+    }
+    .navbar {
+      box-shadow:0px 2px 2px rgba(10, 10, 10, 0.54);
+      padding: 10px 0;
+    }
+    .navbar.is-link {
+      background: var(--primary-bg);
+    }
+    li {
+      list-style: none;
+    }
+    .my-hero {
+      display: flex;
+      width: 100%;
+      padding: 215px 0;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .slogan {
+        font-size: 19px;
+    }
+    .my-hero img {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
   <header id="home">
@@ -28,8 +68,8 @@
       </div>
     </nav>
     <section class="my-hero has-text-white">
-      <h1>Nicolás Mateo Arias Pulido</h1>
-      <h3 class="slogan">Web developer</h3>
+      <h1 class="title has-text-white">Nicolás Mateo Arias Pulido</h1>
+      <h3 class="slogan">Web Engineer</h3>
       <img src="assets/profile.jpg" class="profile-image" alt="">
     </section>
   </header>
@@ -194,8 +234,7 @@
         <div class="columns is-centered"> 
           <div class="column is-two-thirds">
             <h2 class="contact is-size-6  has-text-white">
-              Escribeme a <a href="mailto:nicolasarias870@gmail.com">nicolasarias870@gmail.com</a>
-              <br> O llamame a <a href="tel:+573222497943">(+57) 322 249 7943</a>
+              <a href="mailto:nicolasarias870@gmail.com">Mándame un mail <i class="fas fa-envelope"></i></a>
           </h2>
           </div>
         </div>
@@ -207,6 +246,7 @@
         </div>
       </div>
     </footer>
+    <link rel="stylesheet" href="css/main.css">
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
