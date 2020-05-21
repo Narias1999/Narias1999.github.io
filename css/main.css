@@ -25,11 +25,11 @@
   transition: 0.3s linear;
 }
 .projects figure figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   height: 100%;
   padding: 10px 20px;
@@ -62,8 +62,8 @@ footer {
 }
 .social-icons a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   margin: 0 10px;

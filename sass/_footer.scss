@@ -12,9 +12,7 @@ footer {
   justify-content: center;
   padding-bottom: 10px;
   a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     width: $size-social-media-icon;
     height: $size-social-media-icon;
     margin: 0 10px;
