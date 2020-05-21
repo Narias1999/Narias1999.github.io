@@ -1,57 +1,55 @@
-:root {
-    --primary-bg: #273b82;
-}
+@import './variables';
+
 ::-webkit-scrollbar {
-    background: #fff;
     width: 7px;
+    background: $color-white;
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: var(--primary-bg);
+    background: $color-primary;
 }
 .description {
-    background-color: var(--primary-bg);
     padding-bottom: 20em !important;
+    background-color: $color-primary;
 }
 .skills {
     margin-top: -14em;
 }
 
 .bordered {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid $color-grey;
 }
 .centered{
     margin: 0 !important;
 }
 .is-skill-icon {
-    color: var(--primary-bg);
+    color: $color-primary;
 }
 .projects figure {
+    position: relative;
+    height: 160px;
     overflow: hidden;
     border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    height: 160px;
 }
 .projects figure img {
+    position:  absolute;
     object-fit: cover;
     height: 100%;
-    transition: .3s linear;
     width: 100%;
-    position:  absolute;
+    transition: .3s linear;
 }
 .projects figure figcaption {
     position: absolute;
     top: 0;
-    background: #192a56;
-    opacity: 0;
-    transition: .3s linear;
-    height: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
+    padding: 10px 20px;
+    background: $color-primary-dark;
+    opacity: 0;
+    transition: .3s linear;
 }
 .projects figure:hover figcaption {
     opacity: 1;
@@ -60,7 +58,7 @@
     transform: scale(1.2)
 }
 footer {
-    background: var(--primary-bg);
+    background: $color-primary;
 }
 .contact {
     padding: 15px 0;
@@ -74,21 +72,21 @@ footer {
     padding-bottom: 10px;
 }
 .social-icons a {
-    margin: 0 10px;
-    border: 2px solid #ddd;
-    width: 45px;
-    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: $size-social-media-icon;
+    height: $size-social-media-icon;
+    margin: 0 10px;
+    border: 2px solid $color-grey;
+    color: $color-white;
     border-radius: 50%;
     transition: .3s;
-    color: #fff;
 }
 .social-icons a:hover {
-    color: var(--primary-bg);
-    background: #fff;
-    border: 2px solid #fff;
+    border: 2px solid $color-white;
+    color: $color-primary;
+    background: $color-white;
 }
 @media only screen and (max-width: 770px) {
     .bordered {
