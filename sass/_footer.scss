@@ -3,29 +3,29 @@ footer {
 }
 .contact {
   padding: 15px 0;
-}
-.contact a:hover {
-  color: aqua;
+  a:hover {
+    color: aqua;
+  }
 }
 .social-icons {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
-}
-.social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: $size-social-media-icon;
-  height: $size-social-media-icon;
-  margin: 0 10px;
-  border: 2px solid $color-grey;
-  color: $color-white;
-  border-radius: 50%;
-  transition: .3s;
-}
-.social-icons a:hover {
-  border: 2px solid $color-white;
-  color: $color-primary;
-  background: $color-white;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $size-social-media-icon;
+    height: $size-social-media-icon;
+    margin: 0 10px;
+    border: 2px solid $color-grey;
+    color: $color-white;
+    border-radius: 50%;
+    transition: .3s;
+    &:hover {
+      border: 2px solid $color-white;
+      color: $color-primary;
+      background: $color-white;
+    }
+  }
 }

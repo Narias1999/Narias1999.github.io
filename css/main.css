@@ -17,7 +17,6 @@
   overflow: hidden;
   border-radius: 15px;
 }
-
 .projects figure img {
   position: absolute;
   object-fit: cover;
@@ -25,7 +24,6 @@
   width: 100%;
   transition: 0.3s linear;
 }
-
 .projects figure figcaption {
   position: absolute;
   top: 0;
@@ -39,13 +37,11 @@
   opacity: 0;
   transition: 0.3s linear;
 }
-
-.projects figure:hover figcaption {
-  opacity: 1;
-}
-
 .projects figure:hover img {
   transform: scale(1.2);
+}
+.projects figure:hover figcaption {
+  opacity: 1;
 }
 
 footer {
@@ -55,7 +51,6 @@ footer {
 .contact {
   padding: 15px 0;
 }
-
 .contact a:hover {
   color: aqua;
 }
@@ -65,7 +60,6 @@ footer {
   justify-content: center;
   padding-bottom: 10px;
 }
-
 .social-icons a {
   display: flex;
   align-items: center;
@@ -78,21 +72,10 @@ footer {
   border-radius: 50%;
   transition: 0.3s;
 }
-
 .social-icons a:hover {
   border: 2px solid #FFFFFF;
   color: #273b82;
   background: #FFFFFF;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  background: #FFFFFF;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: #273b82;
 }
 
 .bordered {
@@ -112,6 +95,15 @@ footer {
   h1 {
     font-size: 1.3em;
   }
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #273b82;
 }
 
 /*# sourceMappingURL=main.css.map */

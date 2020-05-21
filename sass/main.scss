@@ -2,6 +2,7 @@
 @import './description';
 @import './projects';
 @import './footer';
+@import 'utilities';
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -10,21 +11,4 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 3px;
     background: $color-primary;
-}
-
-.bordered {
-    border-right: 1px solid $color-grey;
-}
-.centered{
-    margin: 0 !important;
-}
-@media only screen and (max-width: 770px) {
-    .bordered {
-        border-right: 0 !important;
-    }
-}
-@media only screen and (max-width: 520px) {
-    h1 {
-        font-size: 1.3em;
-    }
 }
