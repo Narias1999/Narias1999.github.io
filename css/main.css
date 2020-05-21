@@ -1,13 +1,3 @@
-::-webkit-scrollbar {
-  width: 7px;
-  background: #FFFFFF;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: #273b82;
-}
-
 .description {
   padding-bottom: 20em !important;
   background-color: #273b82;
@@ -15,14 +5,6 @@
 
 .skills {
   margin-top: -14em;
-}
-
-.bordered {
-  border-right: 1px solid #ccc;
-}
-
-.centered {
-  margin: 0 !important;
 }
 
 .is-skill-icon {
@@ -101,6 +83,24 @@ footer {
   border: 2px solid #FFFFFF;
   color: #273b82;
   background: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #273b82;
+}
+
+.bordered {
+  border-right: 1px solid #ccc;
+}
+
+.centered {
+  margin: 0 !important;
 }
 
 @media only screen and (max-width: 770px) {
