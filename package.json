@@ -1,0 +1,31 @@
+{
+  "name": "personal-page",
+  "version": "1.0.0",
+  "description": "This is Nicolás Arias personal page, where he shares some of his experience as web veloper",
+  "main": "index.html",
+  "scripts": {
+    "build-watch": "sass --watch sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narias1999/Narias1999.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "page",
+    "nicolas",
+    "arias",
+    "portfolio",
+    "web",
+    "developer"
+  ],
+  "author": "Nicolás Arias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Narias1999/Narias1999.github.io/issues"
+  },
+  "homepage": "https://github.com/Narias1999/Narias1999.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}

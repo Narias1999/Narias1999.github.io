@@ -1,0 +1,32 @@
+.projects figure {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 15px;
+  img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s linear;
+  }
+  figcaption {
+    @include flex-center;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 20px;
+    background: $color-primary-dark;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+    figcaption {
+      opacity: 1;
+    }
+  }
+}

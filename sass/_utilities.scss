@@ -1,0 +1,17 @@
+h1 {
+  @include respond-to(520px){
+    font-size: 1.3em;
+  }
+}
+.bordered {
+  border-right: 1px solid $color-grey;
+  @include respond-to(770px){
+    border-right: 0 !important;
+  }
+}
+.centered{
+  margin: 0 !important;
+}
+@media only screen and (max-width: 520px) {
+  
+}

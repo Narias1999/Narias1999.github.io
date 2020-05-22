@@ -1,0 +1,11 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond-to($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
