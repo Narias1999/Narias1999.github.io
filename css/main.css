@@ -51,9 +51,6 @@ footer {
 .contact {
   padding: 15px 0;
 }
-.contact a:hover {
-  color: aqua;
-}
 
 .social-icons {
   display: flex;
@@ -95,16 +92,6 @@ footer {
 
 .centered {
   margin: 0 !important;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  background: #FFFFFF;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: #273b82;
 }
 
 /*# sourceMappingURL=main.css.map */

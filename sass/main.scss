@@ -4,12 +4,3 @@
 @import 'projects';
 @import 'footer';
 @import 'utilities';
-
-::-webkit-scrollbar {
-    width: 7px;
-    background: $color-white;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background: $color-primary;
-}
