@@ -4,82 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nicolás Arias | Software Engineer Portfolio</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>Nicolás Arias | Software Engineer Portfolio - Web & Mobile Development</title>
+  <meta name="title" content="Nicolás Arias | Software Engineer Portfolio - Web & Mobile Development">
+  <meta name="description" content="Software Engineer specializing in web and mobile development. Experienced with React, Vue.js, Node.js, and React Native. View my projects and professional experience.">
+  <meta name="keywords" content="software engineer, web developer, mobile developer, React, Vue.js, Node.js, React Native, Colombia, portfolio">
+  <meta name="author" content="Nicolás Arias">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://narias1999.github.io/">
+  <meta property="og:title" content="Nicolás Arias | Software Engineer Portfolio">
+  <meta property="og:description" content="Software Engineer specializing in web and mobile development. Experienced with React, Vue.js, Node.js, and React Native.">
+  <meta property="og:image" content="https://narias1999.github.io/assets/profile.jpeg">
+  <meta property="og:site_name" content="Nicolás Arias Portfolio">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://narias1999.github.io/">
+  <meta property="twitter:title" content="Nicolás Arias | Software Engineer Portfolio">
+  <meta property="twitter:description" content="Software Engineer specializing in web and mobile development. Experienced with React, Vue.js, Node.js, and React Native.">
+  <meta property="twitter:image" content="https://narias1999.github.io/assets/profile.jpeg">
+  
+  <!-- Additional SEO -->
+  <meta name="language" content="English">
+  <meta name="geo.region" content="CO">
+  <meta name="geo.country" content="Colombia">
+  <link rel="canonical" href="https://narias1999.github.io/">
+  
+  <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+  
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Fonts and Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
       <div class="nav-logo">
         <img src="assets/logo.svg" alt="Nicolás Arias Logo" width="80">
       </div>
-              <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#clients" class="nav-link">Clients</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+                    <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#clients" class="nav-link" role="menuitem">Clients</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
     <div class="hero-background"></div>
     <div class="hero-content">
       <div class="hero-text">
-        <h1 class="hero-title">Nicolás Arias</h1>
+        <h1 id="hero-title" class="hero-title">Nicolás Arias</h1>
         <p class="hero-subtitle">Software Engineer</p>
         <p class="hero-description">Passionate about creating innovative solutions and learning new technologies</p>
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          <a href="assets/cv-NicolasArias.pdf" target="_blank" class="btn btn-cv">
-            <i class="fas fa-download"></i>
+          <a href="#projects" class="btn btn-primary" aria-label="View my projects and work">View My Work</a>
+          <a href="#contact" class="btn btn-secondary" aria-label="Get in touch with me">Get In Touch</a>
+          <a href="assets/cv-NicolasArias.pdf" target="_blank" class="btn btn-cv" aria-label="Download my CV (opens in new tab)">
+            <i class="fas fa-download" aria-hidden="true"></i>
             Download CV
           </a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="assets/profile.jpeg" alt="Nicolás Arias" class="profile-image">
+        <img src="assets/profile.jpeg" alt="Nicolás Arias - Software Engineer" class="profile-image">
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about" class="about" aria-labelledby="about-title">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">About Me</h2>
+        <h2 id="about-title" class="section-title">About Me</h2>
         <p class="section-subtitle">Get to know me better</p>
       </div>
       <div class="about-content">
         <div class="about-text">
           <p>Hello! I'm Nicolás Arias, a passionate software engineer with over 7 years of experience building web and mobile applications. I specialize in modern JavaScript frameworks like React, Vue.js, and Node.js, with a strong focus on creating scalable and maintainable solutions.</p>
           <p>As a technical leader, I enjoy mentoring other developers and architecting robust systems. I'm constantly learning and exploring new technologies to stay at the forefront of software development. My approach combines technical excellence with practical problem-solving to deliver high-quality solutions.</p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">7+</span>
+          <div class="about-stats" role="list" aria-label="Professional statistics">
+            <div class="stat" role="listitem">
+              <span class="stat-number" aria-label="7 plus years">7+</span>
               <span class="stat-label">Years Experience</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">5+</span>
+            <div class="stat" role="listitem">
+              <span class="stat-number" aria-label="5 plus engineers">5+</span>
               <span class="stat-label">Engineers Led</span>
             </div>
-            <div class="stat">
-              <span class="stat-number">10+</span>
+            <div class="stat" role="listitem">
+              <span class="stat-number" aria-label="10 plus enterprise projects">10+</span>
               <span class="stat-label">Enterprise Projects</span>
             </div>
           </div>
@@ -89,58 +131,58 @@
   </section>
 
   <!-- Clients Section -->
-  <section id="clients" class="clients">
+  <section id="clients" class="clients" aria-labelledby="clients-title">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">Companies I've Worked With</h2>
+        <h2 id="clients-title" class="section-title">Companies I've Worked With</h2>
         <p class="section-subtitle">Trusted by innovative companies across different industries</p>
       </div>
-      <div class="clients-grid">
-        <a href="https://nubrakes.com/" class="client-card" target="_blank">
+      <div class="clients-grid" role="list" aria-label="Companies I've worked with">
+        <a href="https://nubrakes.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Nubrakes website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/nubrakes.svg" alt="Nubrakes" loading="lazy">
+            <img src="assets/clients/nubrakes.svg" alt="Nubrakes logo" loading="lazy">
           </div>
           <span class="client-name">Nubrakes</span>
         </a>
-        <a href="https://www.publishing.com/" class="client-card" target="_blank">
+        <a href="https://www.publishing.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Publishing.com website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/3D_Publishing_Icon.png" alt="Publishing.com" loading="lazy">
+            <img src="assets/clients/3D_Publishing_Icon.png" alt="Publishing.com logo" loading="lazy">
           </div>
           <span class="client-name">Publishing.com</span>
         </a>
-        <a href="https://helloaxel.com/" class="client-card" target="_blank">
+        <a href="https://helloaxel.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit HelloAxel website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/axel.svg" alt="HelloAxel" loading="lazy">
+            <img src="assets/clients/axel.svg" alt="HelloAxel logo" loading="lazy">
           </div>
           <span class="client-name">HelloAxel</span>
         </a>
-        <a href="https://beta.commercialhub.com/" class="client-card" target="_blank">
+        <a href="https://beta.commercialhub.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Commercial Academy website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/commercial_cademy.svg" alt="Commercial Academy" loading="lazy">
+            <img src="assets/clients/commercial_cademy.svg" alt="Commercial Academy logo" loading="lazy">
           </div>
           <span class="client-name">Commercial Academy</span>
         </a>
-        <a href="https://voice123.com/" class="client-card" target="_blank">
+        <a href="https://voice123.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Voice123 website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/voice123.svg" alt="Voice123" loading="lazy">
+            <img src="assets/clients/voice123.svg" alt="Voice123 logo" loading="lazy">
           </div>
           <span class="client-name">Voice123</span>
         </a>
-        <a href="https://www.bluetread.com/" class="client-card" target="_blank">
+        <a href="https://www.bluetread.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Bluetread website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/bluetread.svg" alt="Bluetread" loading="lazy">
+            <img src="assets/clients/bluetread.svg" alt="Bluetread logo" loading="lazy">
           </div>
           <span class="client-name">Bluetread</span>
         </a>
-        <a href="https://bismark.net.co/" class="client-card" target="_blank">
+        <a href="https://bismark.net.co/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Bismark IOT website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/bismark.png" alt="Bismark IOT" loading="lazy">
+            <img src="assets/clients/bismark.png" alt="Bismark IOT logo" loading="lazy">
           </div>
           <span class="client-name">Bismark IOT</span>
         </a>
-        <a href="http://beon.tech/" class="client-card" target="_blank">
+        <a href="http://beon.tech/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Beon.tech website (opens in new tab)">
           <div class="client-logo">
-            <img src="assets/clients/beon_blue.webp" alt="Beon.tech" loading="lazy">
+            <img src="assets/clients/beon_blue.webp" alt="Beon.tech logo" loading="lazy">
           </div>
           <span class="client-name">Beon.tech</span>
         </a>
@@ -430,7 +472,54 @@
       </div>
     </div>
   </footer>
+  </main>
 
   <script src="js/index.js"></script>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolás Arias",
+    "jobTitle": "Software Engineer",
+    "description": "Software Engineer specializing in web and mobile development with React, Vue.js, Node.js, and React Native",
+    "url": "https://narias1999.github.io",
+    "image": "https://narias1999.github.io/assets/profile.jpeg",
+    "sameAs": [
+      "https://github.com/Narias1999",
+      "https://www.linkedin.com/in/nmariasdev/",
+      "https://twitter.com/nmariasdev"
+    ],
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Nubrakes"
+      },
+      {
+        "@type": "Organization", 
+        "name": "HelloAxel"
+      },
+      {
+        "@type": "Organization",
+        "name": "Voice123"
+      }
+    ],
+    "knowsAbout": [
+      "React.js",
+      "Vue.js", 
+      "Node.js",
+      "React Native",
+      "TypeScript",
+      "GraphQL",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO"
+    }
+  }
+  </script>
 </body>
 </html>
