@@ -1,31 +1,32 @@
 {
-  "name": "personal-page",
-  "version": "1.0.0",
-  "description": "This is Nicolás Arias personal page, where he shares some of his experience as web veloper",
+  "name": "personal-portfolio",
+  "version": "2.0.0",
+  "description": "Nicolás Arias personal portfolio - A modern, lightweight portfolio showcasing web and mobile development projects",
   "main": "index.html",
   "scripts": {
-    "build-watch": "sass --watch sass/main.scss css/main.css"
+    "dev": "python3 -m http.server 8000",
+    "serve": "npx serve ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Narias1999/Narias1999.github.io.git"
   },
   "keywords": [
-    "personal",
-    "page",
+    "portfolio",
     "nicolas",
     "arias",
-    "portfolio",
     "web",
-    "developer"
+    "developer",
+    "software",
+    "engineer",
+    "react",
+    "vue",
+    "nodejs"
   ],
   "author": "Nicolás Arias",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Narias1999/Narias1999.github.io/issues"
   },
-  "homepage": "https://github.com/Narias1999/Narias1999.github.io#readme",
-  "devDependencies": {
-    "sass": "^1.26.5"
-  }
+  "homepage": "https://github.com/Narias1999/Narias1999.github.io#readme"
 }

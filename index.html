@@ -2,253 +2,374 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0s">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nicolás Arias | Portfalio</title>
+  <title>Nicolás Arias | Software Engineer Portfolio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <style>
-  /* ABOVE THE FOLD STYLES */
-    header {
-      background-image: url("../assets/hero.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      box-shadow: 0px 4px 10px rgba(10, 10, 10, 0.54);
-    }
-    .navbar {
-      box-shadow:0px 2px 2px rgba(10, 10, 10, 0.54);
-      padding: 10px 0;
-    }
-    .navbar.is-link {
-      background: #273b82;
-    }
-    li {
-      list-style: none;
-    }
-    .my-hero {
-      display: flex;
-      width: 100%;
-      padding: 215px 0;
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .slogan {
-        font-size: 19px;
-    }
-    .my-hero img {
-      width: 170px;
-      height: 170px;
-      object-fit: cover;
-      margin-top: 20px;
-      border-radius: 50%;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="notification is-primary mb-0 has-text-dark">
-   Hi there! I haven't updated this site on a while, I'm planing on doing it. But meawnhile you can check out my <a href="/assets/cv-NicolasArias.pdf" target="_blank">updated resume</a>. Thank you! 😊
-  </div>
-  <header id="home">
-    <nav class="navbar is-link">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="assets/logo.svg" alt="Nicolás Arias Logo" width="100">
-        </a>                  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="assets/logo.svg" alt="Nicolás Arias Logo" width="80">
       </div>
-      <div class="navbar-menu">
-        <ul class="navbar-end">
-          <a id="goHome" class="navbar-item">Inicio</a>
-          <a id="goDescription" class="navbar-item">Descripción</a>
-          <a id="goSkills" class="navbar-item">Skills</a>
-          <a id="goWork" class="navbar-item">Mi Trabajo</a>
-          <a id="goContact" class="navbar-item">Contácto</a>
-        </ul>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </nav>
-    <section class="my-hero has-text-white">
-      <h1 class="title has-text-white">Nicolás Arias</h1>
-      <h3 class="slogan mb-5">Software Engineer 🇨🇴</h3>
-      <img src="assets/profile.jpeg" alt="nicolás Arias photo" class="profile-image" alt="">
-    </section>
-  </header>
-  <section id="description" class="section is-medium has-text-centered is-long description">
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Nicolás Arias</h1>
+        <p class="hero-subtitle">Software Engineer</p>
+        <p class="hero-description">Passionate about creating innovative solutions and learning new technologies</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          <a href="assets/cv-NicolasArias.pdf" target="_blank" class="btn btn-cv">
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/profile.jpeg" alt="Nicolás Arias" class="profile-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-three-fifths">
-          <h1 class="has-text-white title is-spaced is-size-3-desktop is-size-4-mobile">Hola, soy Nicolás Arias.</h1>
-          <h2 class="has-text-white subtitle is-size-5-desktop">Soy un desarrollador <b>web.</b> <b>Autodidacta</b>, me gusta la tecnología y aprendo todos los días. Actualmente estoy fortaleciendo mis conocimientos en los fundamentos de Computer Science. Me gusta hacer proyectos personales, cumplir metas y ayudar a cumplir las de los demás.</h2>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
       </div>
-    </div>
-  </section>
-  <section id="skills" class="section skills has-text-centered">
-    <div class="container is-narrow">
-      <div class="box">
-        <div class="content">
-            <div class="columns is-centered">
-              <div class="column">
-                  <h1 class="title is-size-2 is-spaced">Skills</h1>
-              </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello! I'm Nicolás Arias, a passionate software engineer with over 7 years of experience building web and mobile applications. I specialize in modern JavaScript frameworks like React, Vue.js, and Node.js, with a strong focus on creating scalable and maintainable solutions.</p>
+          <p>As a technical leader, I enjoy mentoring other developers and architecting robust systems. I'm constantly learning and exploring new technologies to stay at the forefront of software development. My approach combines technical excellence with practical problem-solving to deliver high-quality solutions.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
-            <div class="columns is-centered">
-              <div class="column bordered">
-                <figure class="image"><i class="fas fa-desktop fa-3x is-skill-icon"></i></figure>
-                <h1 class="title is-size-4 is-spaced">Frontend</h1>
-                <ul class="centered">
-                  <li>HTML5, CSS3, Javascript</li>
-                  <li>Vue</li>
-                  <li>ReactJs</li>
-                  <li>Sass</li>
-                  <li>Materialize</li>
-                  <li>Bulma</li>
-                  <li>Bootstrap</li>
-                  <li>UI - UX</li>
-                </ul>
-              </div>
-              <div class="column bordered">
-                <figure class="image"><i class="fas fa-code fa-3x is-skill-icon"></i></figure>
-                  <h1 class="title is-size-4 is-spaced">Backend</h1>
-                  <ul class="centered">
-                    <li>NodeJs + Express</li>
-                    <li>GraphQl</li>
-                    <li>Mongodb + Mongoose</li>
-                    <li>(Mysql o PostgreSQL) + Sequalize</li>
-                    <li>PHP + Laravel</li>
-                </ul>
-              </div>
-              <div class="column">
-                <figure class="image"><i class="fas fa-mobile-alt fa-3x is-skill-icon"></i></figure>
-                <h1 class="title is-size-4 is-spaced">Mobile Development</h1>
-                <ul class="centered">
-                  <li>React Native</li>
-                  <li>NativeScript</li>
-                  <li>Java</li>
-                </ul>
-              </div>
-        </div>
-        <div class="columns is-centered">
-          <div class="column">
-            <div class="container">
-              <figure class="image"><i class="fas fa-cogs fa-3x is-skill-icon"></i></figure>
-              <h1 class="title is-size-4 is-spaced">Dev tools</h1>
-              <p class="is-size-5">VSCode, npm, Git, Github, Bitbucket, gulp, Webpack, Android Studio, Adobe Illustrator, Ubuntu</p>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Engineers Led</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Enterprise Projects</span>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="work" class="section projects is-white has-text-centered">
-    <div class="container is-narrow">
-      <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Mis Recientes Trabajos</h1>
-      <h2 class="subtitle is-size-5-desktop">Estos son algunos de mis más recientes proyectos</h2>
-      <div class="project-grid">  
-        <div class="columns is-multiline is-mobile">
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-                <img class="lazyload" alt="Star battle project cover" class="project-thumb" data-src="assets/work/starBattle-01.jpg">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Juego web creado exclusivamente con vanilla js, desarrollado como entrenamiento para pruebas WorldSkills.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/Star_Battle" target="_blank">
-                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-desktop"></i>
           </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-                <img class="lazyload" alt="Subasta inversa app cover image" class="project-thumb" data-src="assets/work/siapp.webp">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Aplicación móvil desarrollada en react native para proyecto de investigación Fundación RedCOLSI 2018.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/qbitsing/si-app/" target="_blank">
-                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
+          <h3>Frontend Development</h3>
+          <ul class="skill-list">
+            <li>React & Next.js</li>
+            <li>Vue.js & Nuxt.js</li>
+            <li>TypeScript</li>
+            <li>Modern CSS (Tailwind, CSS-in-JS)</li>
+            <li>State Management (Redux, Pinia)</li>
+            <li>Performance Optimization</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
           </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-                <img class="lazyload" alt="Native android app cover" class="project-thumb" data-src="assets/work/android-01.jpg">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Aplicación android desarrollada de manera nativa con Java, como entrenamiento para competencia Senasoft 2018.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/androidCompleteGeo" target="_blank">
-                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
+          <h3>Backend Development</h3>
+          <ul class="skill-list">
+            <li>NestJS</li>
+            <li>Node.js & Express</li>
+            <li>RESTful APIs</li>
+            <li>GraphQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Microservices Architecture</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-users"></i>
           </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-              <img class="lazyload" alt="Hanoi towers game cover" class="project-thumb" data-src="assets/work/hanoi-01.jpg">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Juego de las torres de hanoi web creado con html5, css3 y javascript vanilla. Los resultados se guardan el la real time database de firebase.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/HanoiTowers" target="_blank">
-                  <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
+          <h3>Leadership & Team Management</h3>
+          <ul class="skill-list">
+            <li>Team Lead Experience (5+ Engineers)</li>
+            <li>Code Review & Mentoring</li>
+            <li>Technical Planning</li>
+            <li>Project Estimation</li>
+            <li>Cross-team Collaboration</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
           </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-                <img class="lazyload" alt="GraphQL" class="project-thumb" data-src="assets/work/graph.png">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Backend para la aplicacion del proyecto de investigación RedCOLSI 2018, escrito en NodeJs con sinsfraestructura GraphQL.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/mpgigat/si-api" target="_blank">
-                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
+          <h3>AI Integration</h3>
+          <ul class="skill-list">
+            <li>OpenAI API Integration</li>
+            <li>Google Gemini API</li>
+            <li>LLM Prompt Engineering</li>
+            <li>AI-Powered Features</li>
+            <li>Embeddings & Vector DBs</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
           </div>
-          <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
-            <figure class="image is-3by2">
-                <img class="lazyload" alt="You movie website and vuejs cover" class="project-thumb" data-src="assets/work/youMovie-01.jpg">
-              <figcaption>
-                <h1 class="title is-size-5 is-size-6-widescreen has-text-white">Sitio web de peliculas, en la seccion "otras" uso el frameowrk Vue JS para crear el componente card reutilizable al hacer la petición a la api TheMovieDB.</h1>
-                <a class="button is-primary is-outlined is-rounded" href="https://github.com/Narias1999/YouMovie" target="_blank">
-                    <span>Ver Repositorio</span><span class="icon"><i class="fas fa-angle-right"></i></span>
-                </a>
-              </figcaption>
-            </figure>
-          </div>
+          <h3>Developer Tools</h3>
+          <ul class="skill-list">
+            <li>Cursor</li>
+            <li>Git, GitHub, GitLab</li>
+            <li>Docker & Kubernetes</li>
+            <li>CI/CD Pipelines with GH actions and GitLab CI</li>
+          </ul>
         </div>
       </div>
-      <div class="columns is-centered">
-        <div class="column">
-            <a class="button is-primary is-outlined is-rounded is-medium" href="https://github.com/Narias1999">
-                <span class="icon"><i class="fab fa-github"></i></span><span>Ver más en Github</span>
-            </a>
-        </div>
-      </div>
-  </div>
+    </div>
   </section>
-  <footer id="contact" class="section is-primary is-small has-text-centered">
-      <div class="container is-narrow">
-        <figure class="logo">
-          <img data-src="assets/logo.svg" class="lazyload" width="130" alt="Nicolás Arias logo">
-          <figcaption>
-            <span class="is-size-4 has-text-white">Nicolás Arias</span>
-          </figcaption>
-        </figure>
-        <div class="columns is-centered"> 
-          <div class="column is-two-thirds">
-            <h2 class="contact is-size-6  has-text-white">
-            <a class="button" href="mailto:nicolasarias870@gmail.com">Mándame un mail <i class="fas fa-envelope ml-2"></i></a>
-          </h2>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Personal (old) Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/starBattle-01.jpg" alt="Star Battle Game" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Narias1999/Star_Battle" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Star Battle Game</h3>
+            <p>A web-based game created exclusively with vanilla JavaScript, developed as training for WorldSkills competitions.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
           </div>
         </div>
-        <div class="social-icons">
-          <a href="https://twitter.com/nmariasdev" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-          <a href="https://www.linkedin.com/in/nmariasdev/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-          <a href="https://www.instagram.com/nmariasdev/?hl=es" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="https://medium.com/@nmariasdev" target="_blank"><i class="fab fa-medium fa-lg"></i></a>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/siapp.webp" alt="Reverse Auction App" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/qbitsing/si-app/" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Reverse Auction Mobile App</h3>
+            <p>Mobile application developed in React Native for RedCOLSI Foundation research project 2018.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/android-01.jpg" alt="Android App" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Narias1999/androidCompleteGeo" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Native Android App</h3>
+            <p>Android application developed natively with Java, as training for Senasoft 2018 competition.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Native</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/hanoi-01.jpg" alt="Hanoi Towers Game" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Narias1999/HanoiTowers" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Hanoi Towers Game</h3>
+            <p>Web-based Hanoi Towers game created with HTML5, CSS3, and vanilla JavaScript. Results are saved to Firebase real-time database.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">HTML5</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/graph.png" alt="GraphQL API" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/mpgigat/si-api" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>GraphQL API Backend</h3>
+            <p>Backend for RedCOLSI 2018 research project application, written in Node.js with GraphQL infrastructure.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">GraphQL</span>
+              <span class="tech-tag">Express</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/work/youMovie-01.jpg" alt="YouMovie Website" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Narias1999/YouMovie" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>YouMovie Website</h3>
+            <p>Movie website using Vue.js framework to create reusable card components when making requests to TheMovieDB API.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">API</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="./js/lazysizes.min.js" async></script>
-    <link rel="stylesheet" href="css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+      <div class="projects-cta">
+        <a href="https://github.com/Narias1999" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i>
+          View More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:nicolasarias870@gmail.com">nicolasarias870@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Colombia</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://twitter.com/nmariasdev" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nmariasdev/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/nmariasdev/" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://medium.com/@nmariasdev" target="_blank" class="social-link">
+            <i class="fab fa-medium"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.svg" alt="Nicolás Arias" width="60">
+          <p>Nicolás Arias</p>
+        </div>
+        <p class="footer-text">© 2024 Nicolás Arias. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
