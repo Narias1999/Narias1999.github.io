@@ -45,7 +45,8 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   
   <!-- Fonts and Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -59,13 +60,13 @@
       <div class="nav-logo">
         <img src="assets/logo.svg" alt="Nicolás Arias Logo" width="80">
       </div>
-                    <ul class="nav-menu" role="menubar">
-        <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
-        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
-        <li role="none"><a href="#clients" class="nav-link" role="menuitem">Clients</a></li>
-        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
-        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
-        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+    <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#home"       class="nav-link" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"      class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#skills"     class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"   class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact"    class="nav-link" role="menuitem">Contact</a></li>
       </ul>
       <div class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="bar" aria-hidden="true"></span>
@@ -79,29 +80,45 @@
   <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero" aria-labelledby="hero-title">
-    <div class="hero-background"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 id="hero-title" class="hero-title">Nicolás Arias</h1>
-        <p class="hero-subtitle">Software Engineer</p>
-        <p class="hero-description">Passionate about creating innovative solutions and learning new technologies</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary" aria-label="View my projects and work">View My Work</a>
-          <a href="#contact" class="btn btn-secondary" aria-label="Get in touch with me">Get In Touch</a>
-          <a href="assets/cv-NicolasArias.pdf" target="_blank" class="btn btn-cv" aria-label="Download my CV (opens in new tab)">
-            <i class="fas fa-download" aria-hidden="true"></i>
-            Download CV
-          </a>
+      <!-- Decorative parallax dots -->
+      <div class="hero-dots" aria-hidden="true">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-4"></span>
+        <span class="dot dot-5"></span>
+        <span class="dot dot-6"></span>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 id="hero-title" class="hero-title">Nicolás Arias</h1>
+          <p class="hero-role">
+            <span class="role-text">Senior Software Engineer</span>
+          </p>
+          <p class="hero-description">
+            I build fast, scalable products — from frontend interfaces to backend systems — and help engineering teams ship with confidence.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects"  class="btn btn-primary"   aria-label="View my projects and work">View My Work</a>
+            <a href="#contact"   class="btn btn-secondary" aria-label="Get in touch with me">Get In Touch</a>
+            <a href="assets/cv-NicolasArias.pdf" target="_blank" class="btn btn-cv" aria-label="Download my CV (opens in new tab)">
+              <i class="fas fa-download" aria-hidden="true"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-image-wrapper">
+            <img src="assets/profile.jpeg" alt="Nicolás Arias - Software Engineer" class="profile-image">
+          </div>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="assets/profile.jpeg" alt="Nicolás Arias - Software Engineer" class="profile-image">
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- About Section -->
-  <section id="about" class="about" aria-labelledby="about-title">
+  <section id="about" class="about reveal-section" aria-labelledby="about-title">
     <div class="container">
       <div class="section-header">
         <h2 id="about-title" class="section-title">About Me</h2>
@@ -130,148 +147,296 @@
     </div>
   </section>
 
-  <!-- Clients Section -->
-  <section id="clients" class="clients" aria-labelledby="clients-title">
+  <!-- Experience Section -->
+  <section id="experience" class="experience reveal-section" aria-labelledby="experience-title">
     <div class="container">
       <div class="section-header">
-        <h2 id="clients-title" class="section-title">Companies I've Worked With</h2>
-        <p class="section-subtitle">Trusted by innovative companies across different industries</p>
+        <h2 id="experience-title" class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Companies and teams I've had the pleasure of building with</p>
       </div>
-      <div class="clients-grid" role="list" aria-label="Companies I've worked with">
-        <a href="https://nubrakes.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Nubrakes website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/nubrakes.svg" alt="Nubrakes logo" loading="lazy">
+
+      <div class="experience-grid">
+
+        <div class="exp-section-label">Full-time</div>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/nubrakes.svg" alt="Nubrakes" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Senior Software Engineer</h3>
+              <a href="https://nubrakes.com/" class="exp-company" target="_blank" rel="noopener">Nubrakes – Acquired by Valvoline</a>
+              <span class="exp-date">2024 – Present</span>
+            </div>
           </div>
-          <span class="client-name">Nubrakes</span>
-        </a>
-        <a href="https://www.publishing.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Publishing.com website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/3D_Publishing_Icon.png" alt="Publishing.com logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Maintain the nubrakes.com application, which serves tens of thousands of vehicles monthly</li>
+            <li>Implemented route optimization features that improved technician efficiency by up to 10%</li>
+            <li>Built the portal for managing and serving vehicle fleets</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/voice123.svg" alt="Voice123" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Software Engineer</h3>
+              <a href="https://voice123.com/" class="exp-company" target="_blank" rel="noopener">Voice123 – Acquired by Backstage</a>
+              <span class="exp-date">2020 – 2024</span>
+            </div>
           </div>
-          <span class="client-name">Publishing.com</span>
-        </a>
-        <a href="https://helloaxel.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit HelloAxel website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/axel.svg" alt="HelloAxel logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Architected and implemented multiple features for the Voice123 platform, used by over one million people worldwide</li>
+            <li>Led data integrations with third-party tools including HubSpot and Metabase</li>
+            <li>Reduced the open bug backlog from over 90 issues to fewer than 10</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/bismark.png" alt="Bismark IOT" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Junior Developer</h3>
+              <a href="https://bismark.net.co/" class="exp-company" target="_blank" rel="noopener">Bismark IOT</a>
+              <span class="exp-date">2018 – 2020</span>
+            </div>
           </div>
-          <span class="client-name">HelloAxel</span>
-        </a>
-        <a href="https://beta.commercialhub.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Commercial Academy website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/commercial_cademy.svg" alt="Commercial Academy logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Developed high-performance frontend applications rendering large volumes of geographic, industrial, and user data from IoT devices on the Cumulocity IoT Cloud</li>
+            <li>Built IoT agents using Node.js and Scala, deployed on EC2 instances and AWS Lambda</li>
+            <li>Contributed to a React Native mobile application for monitoring public service truck routes</li>
+          </ul>
+        </article>
+
+        <div class="exp-section-label">Contractor</div>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/bluetread.svg" alt="Bluetread" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Contractor</h3>
+              <a href="https://www.bluetread.com/" class="exp-company" target="_blank" rel="noopener">Bluetread</a>
+              <span class="exp-date"></span>
+            </div>
           </div>
-          <span class="client-name">Commercial Academy</span>
-        </a>
-        <a href="https://voice123.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Voice123 website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/voice123.svg" alt="Voice123 logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Developed MyApp, a React Native mobile application enabling diabetes patients to request medical supplies from their insurance provider</li>
+            <li>Fixed bugs and implemented new features for Bonafide, a React Native mobile app for managing the inventory and delivery of medical supplies</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/commercial_cademy.svg" alt="Commercial Academy" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Contractor</h3>
+              <a href="https://beta.commercialhub.com/" class="exp-company" target="_blank" rel="noopener">Commercial Academy</a>
+              <span class="exp-date"></span>
+            </div>
           </div>
-          <span class="client-name">Voice123</span>
-        </a>
-        <a href="https://www.bluetread.com/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Bluetread website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/bluetread.svg" alt="Bluetread logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Rebuilt the revamped version of the commercial hub platform</li>
+            <li>Built the MVP of their commercial property underwriting system</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/3D_Publishing_Icon.png" alt="Publishing.com" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Contractor</h3>
+              <a href="https://www.publishing.com/" class="exp-company" target="_blank" rel="noopener">Publishing.com</a>
+              <span class="exp-date"></span>
+            </div>
           </div>
-          <span class="client-name">Bluetread</span>
-        </a>
-        <a href="https://bismark.net.co/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Bismark IOT website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/bismark.png" alt="Bismark IOT logo" loading="lazy">
+          <ul class="exp-bullets">
+            <li>Built the MVP for their AI-powered book writing tool</li>
+            <li>Created the publishing.com chrome extension for integrating with KDP and gather insights about performance of their books sales</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="exp-header">
+            <div class="exp-logo">
+              <img src="assets/clients/axel.svg" alt="HelloAxel" loading="lazy">
+            </div>
+            <div class="exp-meta">
+              <h3 class="exp-role">Contractor</h3>
+              <a href="https://helloaxel.com/" class="exp-company" target="_blank" rel="noopener">HelloAxel</a>
+              <span class="exp-date"></span>
+            </div>
           </div>
-          <span class="client-name">Bismark IOT</span>
-        </a>
-        <a href="http://beon.tech/" class="client-card" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Beon.tech website (opens in new tab)">
-          <div class="client-logo">
-            <img src="assets/clients/beon_blue.webp" alt="Beon.tech logo" loading="lazy">
-          </div>
-          <span class="client-name">Beon.tech</span>
-        </a>
+          <ul class="exp-bullets">
+            <li>Built the MVP of the trip monitoring system portal</li>
+          </ul>
+        </article>
+
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
+  <section id="skills" class="skills reveal-section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Skills & Technologies</h2>
-        <p class="section-subtitle">Technologies I work with</p>
+        <p class="section-subtitle">Tools I reach for every day</p>
       </div>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-icon">
-            <i class="fas fa-desktop"></i>
+
+      <div class="skills-categories">
+
+        <div class="skills-category-block">
+          <h3 class="skills-category-label">Frontend</h3>
+          <div class="skills-icon-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-nextjs-plain"></i>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-vuejs-plain colored"></i>
+              <span>Vue.js</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-nuxtjs-plain colored"></i>
+              <span>Nuxt.js</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-typescript-plain colored"></i>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <span>Tailwind</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-redux-original colored"></i>
+              <span>Redux</span>
+            </div>
           </div>
-          <h3>Frontend Development</h3>
-          <ul class="skill-list">
-            <li>React & Next.js</li>
-            <li>Vue.js & Nuxt.js</li>
-            <li>TypeScript</li>
-            <li>Modern CSS (Tailwind, CSS-in-JS)</li>
-            <li>State Management (Redux, Pinia)</li>
-            <li>Performance Optimization</li>
-            <li>Responsive Design</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-icon">
-            <i class="fas fa-server"></i>
+
+        <div class="skills-category-block">
+          <h3 class="skills-category-label">Backend</h3>
+          <div class="skills-icon-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-nestjs-plain colored"></i>
+              <span>NestJS</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-express-original"></i>
+              <span>Express</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-graphql-plain colored"></i>
+              <span>GraphQL</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
           </div>
-          <h3>Backend Development</h3>
-          <ul class="skill-list">
-            <li>NestJS</li>
-            <li>Node.js & Express</li>
-            <li>RESTful APIs</li>
-            <li>GraphQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>Microservices Architecture</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-icon">
-            <i class="fas fa-users"></i>
+
+        <div class="skills-category-block">
+          <h3 class="skills-category-label">Tools & DevOps</h3>
+          <div class="skills-icon-grid">
+            <div class="skill-icon-item">
+              <i class="devicon-docker-plain colored"></i>
+              <span>Docker</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-kubernetes-plain colored"></i>
+              <span>Kubernetes</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-icon-item">
+              <i class="devicon-gitlab-plain colored"></i>
+              <span>GitLab CI</span>
+            </div>
           </div>
-          <h3>Leadership & Team Management</h3>
-          <ul class="skill-list">
-            <li>Team Lead Experience (5+ Engineers)</li>
-            <li>Code Review & Mentoring</li>
-            <li>Technical Planning</li>
-            <li>Project Estimation</li>
-            <li>Cross-team Collaboration</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-icon">
-            <i class="fas fa-brain"></i>
+
+        <div class="skills-category-block">
+          <h3 class="skills-category-label">AI Integration</h3>
+          <div class="skills-tag-grid">
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">Google Gemini</span>
+            <span class="skill-tag">LLM Prompting</span>
+            <span class="skill-tag">Embeddings</span>
+            <span class="skill-tag">Vector DBs</span>
+            <span class="skill-tag">AI Features</span>
           </div>
-          <h3>AI Integration</h3>
-          <ul class="skill-list">
-            <li>OpenAI API Integration</li>
-            <li>Google Gemini API</li>
-            <li>LLM Prompt Engineering</li>
-            <li>AI-Powered Features</li>
-            <li>Embeddings & Vector DBs</li>
-          </ul>
         </div>
-        <div class="skill-category">
-          <div class="skill-icon">
-            <i class="fas fa-tools"></i>
-          </div>
-          <h3>Developer Tools</h3>
-          <ul class="skill-list">
-            <li>Cursor</li>
-            <li>Git, GitHub, GitLab</li>
-            <li>Docker & Kubernetes</li>
-            <li>CI/CD Pipelines with GH actions and GitLab CI</li>
-          </ul>
-        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="clients" aria-label="Companies I've worked with">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Companies I've Worked With</h2>
+        <p class="section-subtitle">Trusted by innovative companies across different industries</p>
+      </div>
+    </div>
+
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <!-- First set -->
+        <div class="marquee-item"><img src="assets/clients/nubrakes.svg"            alt="Nubrakes"           loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/3D_Publishing_Icon.png"  alt="Publishing.com"     loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/axel.svg"                alt="HelloAxel"          loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/commercial_cademy.svg"   alt="Commercial Academy" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/voice123.svg"            alt="Voice123"           loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/bluetread.svg"           alt="Bluetread"          loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/bismark.png"             alt="Bismark IOT"        loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/beon_blue.webp"          alt="Beon.tech"          loading="lazy"></div>
+        <!-- Duplicate set for seamless loop -->
+        <div class="marquee-item"><img src="assets/clients/nubrakes.svg"            alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/3D_Publishing_Icon.png"  alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/axel.svg"                alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/commercial_cademy.svg"   alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/voice123.svg"            alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/bluetread.svg"           alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/bismark.png"             alt="" loading="lazy"></div>
+        <div class="marquee-item"><img src="assets/clients/beon_blue.webp"          alt="" loading="lazy"></div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects reveal-section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Personal (old) Projects</h2>
@@ -419,7 +584,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact reveal-section">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">Get In Touch</h2>
@@ -446,10 +611,7 @@
           <a href="https://twitter.com/nmariasdev" target="_blank" class="social-link">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://www.linkedin.com/in/nmariasdev/" target="_blank" class="social-link">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/nmariasdev/" target="_blank" class="social-link">
+          <a href="https://www.instagram.com/nicolasarias.dev/" target="_blank" class="social-link">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="https://medium.com/@nmariasdev" target="_blank" class="social-link">
@@ -468,12 +630,14 @@
           <img src="assets/logo.svg" alt="Nicolás Arias" width="60">
           <p>Nicolás Arias</p>
         </div>
-        <p class="footer-text">© 2024 Nicolás Arias. All rights reserved.</p>
+        <p class="footer-text">© 2025 Nicolás Arias. All rights reserved.</p>
       </div>
     </div>
   </footer>
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/index.js"></script>
   
   <!-- Structured Data for SEO -->
